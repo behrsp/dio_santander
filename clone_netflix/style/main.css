@@ -1,0 +1,138 @@
+/* resetar css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* limete da borda da caixa*/
+}
+/*configuração do estilo*/
+
+:root{
+    --vermelho: #E50914; 
+    --preta: #141414;
+}
+
+body{
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display:flex; /* para colocar as linhas ao lado do logo */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo { /* cuida do logo do site*/
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /* remove a linha do link*/
+    color: #AAA;
+    margin: 10px;
+}
+
+/* para mudar de cor quando o mouse passa em cima do elemento */
+header nav a:hover{
+    color: red;
+}
+
+/* filme principal*/
+
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-walking.jpg'); /* coloca a imagem da capa */
+
+    height: 400px;
+    background-size: cover; /* força imagem ficar do tamanho total*/
+
+    display: flex;
+    flex-direction: column; /* deixa os botoes em coluna*/
+    justify-content: center; /* centraliza os elementos */
+    align-items: flex-start;/* para deixar os elementos sempre alinhados a esqueda, no começo*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px; /* dar distancimanento entre os elementos*/
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size:35px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/* classe para imagens do carrossel*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+
+
+
+/* 
+configurar o botao com reflexo
+Exercicio a parte
+pesquisa na internet
+Como exercício de roupagem nova para o site
+
+*/
+
+
+
+.botao{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #050808;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+/* reflexo do botao */ 
+.botao:hover{
+    background: #101213;
+    color: rgb(155, 122, 122);
+    border-radius: 10px;
+    box-shadow: 0 0 5px #e93508,
+  
+                0 0 25px #da2606,
+  
+                0 0 50px #961504,
+  
+                0 0 100px #ee341b;
+}
+
+.botao span {
+    position: absolute;
+    display: block;
+}
