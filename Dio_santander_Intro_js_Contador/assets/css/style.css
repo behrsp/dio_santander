@@ -1,0 +1,65 @@
+/* reset css*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  ==== variáveis ==== */
+:root{
+    --cor-de-fundo: #25003e;
+    --cor-da-fonte: rgb(232, 240, 190);
+    --cor-do-botao: rgb(56, 192, 233);
+    --cor-hover: rgb(110, 110, 23);
+
+    /* fontes */
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-dos-botões:'Kdam Thmor Pro', sans-serif;
+}
+
+
+/* principal */
+
+.corpo{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.corpo span{
+    color: rgb(0, 194, 228);
+}
+
+.container{
+    margin-top: 230px;
+    width: 80%;
+    height: 100px;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+button{
+    height: 40px;
+    width:  40px;
+    border-radius: 50%;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    transition: .2s;
+    cursor: progress;
+}
+
+.container button:hover{
+    color: black;
+    background-color: var(--cor-hover);
+}
+
+#currentNumber{
+    font-family: var(--fonte-dos-botões);
+    font-size: 3rem;
+}
+
+
