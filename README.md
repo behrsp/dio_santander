@@ -7,5 +7,7 @@ Projetos e aulas do Boot Camp Santander Full Stack Web Developer
     no html, acrescentei algumas classes para modificar o css ao meu gosto.
     no css, adicionei aos botões a função hover.
     Os próximos passos, serão alterar o JS.
+4. TodoList, mais um projeto envolvendo os conceitos do curso de JS ministrado pela Stephany #stebsnuch, misturado com pouco de html e css, porém com algumas consultas para inicializar um banco de dados local.
+
 
 
